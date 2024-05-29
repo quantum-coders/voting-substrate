@@ -1,0 +1,17 @@
+[package]
+name = "pallet-voting"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+frame-support = { version = "4.0.0", default-features = false }
+frame-system = { version = "4.0.0", default-features = false }
+sp-std = { version = "4.0.0", default-features = false }
+
+[features]
+default = ["std"]
+std = [
+    "frame-support/std",
+    "frame-system/std",
+    "sp-std/std",
+]
